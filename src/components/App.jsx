@@ -3,12 +3,11 @@ import '../App.css'
 import PasswordInput from './PasswordInput'
 import SubmitButton from './SubmitButton'
 
-function App() {
-
+const App = () => {
   return (
     <div>
-      <PasswordInput/>
-      <SubmitButton/>
+      <PasswordInput />
+      <SubmitButton />
     </div>
   )
 }

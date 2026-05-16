@@ -1,9 +1,23 @@
 // Code SubmitButton Component Here
+import React from 'react'
 
-function SubmitButton (){
-    return(
-        <></>
-    )
+const SubmitButton = () => {
+  const handleEnter = () => {
+    console.log('Mouse Entering')
+  }
+
+  const handleLeave = () => {
+    console.log('Mouse Exiting')
+  }
+
+  return (
+    <button
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      Submit Password
+    </button>
+  )
 }
 
-export default SubmitButton;
+export default SubmitButton
